@@ -7,14 +7,15 @@ Before starting the project, I tried working with both Bitsy and Unity. Bitsy fe
 
 <img src="../Images/week2-image1.png"
      style="border:1px solid #444; padding:4px;"
-     width="400">
+     width="500">
 <img src="../Images/week2-image2.png"
      style="border:1px solid #444; padding:4px;"
-     width="400">
+     width="500">
 
 Because of the time limit, I intentionally kept the controls very simple and limited the game to a single button for jumping. I also decided not to design handcrafted levels. Instead, I chose an endless, procedurally generated structure. This helped reduce the amount of content I needed to make and allowed me to spend more time testing whether the core gameplay idea worked.
 
 ![Game Screenshot](../Images/Week2-gif.gif)
+
 
 During early testing, I expected the game to be easy to learn. However, I quickly noticed that the jump was hard to judge because of the current values (jump force, max distance, min distance etc..), which made the game much more difficult than I had planned. This showed that even in a very small and seemingly simple game, things like number tuning and difficulty curves have a big impact on how the game feels to play.
 
