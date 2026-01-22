@@ -1,12 +1,16 @@
 # Weekly Class Journal
 ___
-## Week 2 Design Journal – Make a Thing
+## January 22 - Week 2 Design Journal – Make a Thing
 This week, I wanted to see if I could make a small but complete playable game within a very limited amount of time. I was also interested in figuring out which parts of game development are worth spending time on when working on a short prototype. 
 
 Before starting the project, I tried working with both Bitsy and Unity. Bitsy feels more focused on storytelling and emotional expression through text and simple spaces, while Unity makes it easier to build game mechanics by using existing systems. Since I’m not very comfortable coming up with a strong theme or story in a short amount of time, I decided to use Unity and focus more on mechanics and interaction instead.
 
-![Game Screenshot](../Images/week2-image1.png)
-![Game Screenshot](../Images/week2-image2.png)
+<img src="../Images/week2-image1.png"
+     style="border:1px solid #444; padding:4px;"
+     width="400">
+<img src="../Images/week2-image2.png"
+     style="border:1px solid #444; padding:4px;"
+     width="400">
 
 Because of the time limit, I intentionally kept the controls very simple and limited the game to a single button for jumping. I also decided not to design handcrafted levels. Instead, I chose an endless, procedurally generated structure. This helped reduce the amount of content I needed to make and allowed me to spend more time testing whether the core gameplay idea worked.
 
