@@ -90,12 +90,27 @@ public class BreakoutBall_working : MonoBehaviour
             Reset();
         }
 
-        if (other.gameObject.tag == "Brick")
+        if (other.gameObject.tag == "Brick" || other.gameObject.tag == "Unbreakable")
         {
-            int pv = other.gameObject.GetComponent<BrickScript>().pointValue;
-            GameManagement.S.AddPoint(pv);
-            Destroy(other.gameObject);
+            BrickScript bs = other.gameObject.GetComponent<BrickScript>();
+            int pointValue = bs.pointValue;
+
+            if (bs == null)
+            {
+                return;
+            }
+
+            if (bs.breakable)
+            {
+                GameManagement.S.AddPoint(pointValue);
+                Destroy(other.gameObject);
+            }
+
+
+
         }
+
+
 
     }
 

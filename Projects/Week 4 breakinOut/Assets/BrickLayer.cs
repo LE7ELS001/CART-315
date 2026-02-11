@@ -9,6 +9,9 @@ public class BrickLayer : MonoBehaviour
 
     public int numBricks;
 
+    public float unbreakableChance = 0.35f;
+    public Color unbreakbleColor = Color.gray;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,14 +38,32 @@ public class BrickLayer : MonoBehaviour
 
                 BrickScript bs = newBrick.GetComponent<BrickScript>();
 
-                if (i % 2 == 0)
+                //unbreakable brick generate 
+                bool makeUnbreakable = Random.value < unbreakableChance;
+
+                if (makeUnbreakable)
                 {
-                    bs.setBrick(1, Color.blue);
+                    bs.breakable = false;
+                    bs.setBrick(0, unbreakbleColor);
+
+                    newBrick.tag = "Unbreakable";
                 }
                 else
                 {
-                    bs.setBrick(2, Color.red);
+                    bs.breakable = true;
+                    if (i % 2 == 0)
+                    {
+                        bs.setBrick(1, Color.blue);
+                    }
+                    else
+                    {
+                        bs.setBrick(2, Color.red);
+                    }
+
+                    newBrick.tag = "Brick";
+                    numBricks++;
                 }
+
 
             }
         }
