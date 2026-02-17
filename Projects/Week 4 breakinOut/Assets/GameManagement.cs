@@ -12,6 +12,18 @@ public class GameManagement : MonoBehaviour
 
     public int HighScore;
 
+    //dynamic difficulties control
+    public float windowSeconds = 15f;
+    public int targetDestroy = 10;
+    private float windowStartTime;
+    private int destroyedInWindows;
+    public bool hardModeActive = false;
+
+    //brick movement
+    public float moveAmplitude = 1.5f;
+    public float moveSpeed = 2f;
+
+    private BrickLayer brickLayer;
 
 
 
@@ -27,6 +39,53 @@ public class GameManagement : MonoBehaviour
 
     void Start()
     {
+        ResetChallengeState();
+        FindBrickLayer();
+    }
+
+    void FindBrickLayer()
+    {
+        brickLayer = FindFirstObjectByType<BrickLayer>();
+    }
+
+    public void ResetChallengeState()
+    {
+        windowStartTime = Time.time;
+        destroyedInWindows = 0;
+        hardModeActive = false;
+    }
+
+    public void OnBrickDestroyed()
+    {
+        if (hardModeActive) return;
+
+        if (Time.time - windowStartTime > windowSeconds)
+        {
+            windowStartTime = Time.time;
+            destroyedInWindows = 0;
+        }
+
+        destroyedInWindows++;
+
+        if (destroyedInWindows >= targetDestroy)
+        {
+            ActiveHardMode();
+        }
+
+    }
+
+    void ActiveHardMode()
+    {
+        hardModeActive = true;
+
+        ChangeBreakableBricks();
+
+        if (brickLayer == null) FindBrickLayer();
+
+        if (brickLayer != null)
+        {
+            brickLayer.StartMovingBricks(moveAmplitude, moveSpeed);
+        }
     }
 
     public void LoseLife()
@@ -42,6 +101,19 @@ public class GameManagement : MonoBehaviour
             }
             GameOver();
 
+        }
+    }
+
+    void ChangeBreakableBricks()
+    {
+        BrickScript[] allBricks = FindObjectsByType<BrickScript>(FindObjectsSortMode.None);
+
+        foreach (BrickScript bs in allBricks)
+        {
+            if (bs.breakable)
+            {
+                bs.setBrick(3, Color.yellow);
+            }
         }
     }
 

@@ -103,6 +103,7 @@ public class BreakoutBall_working : MonoBehaviour
             if (bs.breakable)
             {
                 GameManagement.S.AddPoint(pointValue);
+                GameManagement.S.OnBrickDestroyed();
                 Destroy(other.gameObject);
             }
 

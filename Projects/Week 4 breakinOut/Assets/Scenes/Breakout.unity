@@ -151,6 +151,11 @@ MonoBehaviour:
   points: 0
   lives: 3
   HighScore: 0
+  windowSeconds: 15
+  targetDestroy: 3
+  hardModeActive: 0
+  moveAmplitude: 1.5
+  moveSpeed: 2
 --- !u!4 &21868225
 Transform:
   m_ObjectHideFlags: 0
@@ -1501,13 +1506,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brick: {fileID: 3309710129981234345, guid: cf9dfe384d6d2447baaab8131aa1d139, type: 3}
-  rows: 3
+  rows: 4
   columns: 6
   bs_h: 3
   bs_v: 0.9
   numBricks: 0
-  unbreakableChance: 0.25
+  unbreakableChance: 0.3
   unbreakbleColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  bottomSafeRows: 1
+  maxUnbreakables: 12
+  maxUnbreakableNeighbors: 2
 --- !u!4 &1946100985
 Transform:
   m_ObjectHideFlags: 0
@@ -1517,7 +1525,7 @@ Transform:
   m_GameObject: {fileID: 1946100983}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
