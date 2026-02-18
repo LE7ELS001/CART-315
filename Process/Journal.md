@@ -140,6 +140,8 @@ When hard mode is triggered:
 * All remaining breakable bricks change color.
 * Their point value increases.
 * The entire brick layer begins to move horizontally over time.
+![Game Screenshot](../Images/week6-gif.gif)
+
 This change transforms the level from a fixed layout into a responsive system that reacts to good performance.
 
 ### What This Change Tests
