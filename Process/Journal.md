@@ -163,3 +163,54 @@ When the trigger felt challenging but achievable, hard mode became something pla
 While this prototype focused on rewarding strong performance with increased challenge, it also raised another important question: how should the system respond to weaker performance?
 If high-performing players are rewarded with hard mode, should players who struggle receive some form of assistance? For example, the game could provide temporary support, such as granting an extra life after repeated failures. Exploring this possibility could become my next step.
 ___
+
+## February 19-25 - Week 6 - Design Journal: Iterative Prototype 1 (Conceptualizing)
+### Combination 1 – Horse Race, Cult
+In the first round, our group ended up with horse race and cult. My first instinct was to turn it into a competitive racing game where members of a cult compete and use items to interfere with each other during the race. I was thinking about something like the game Road Rash.
+But soon, I felt like it was basically just a racing game with a “cult” skin on top. The cult element didn’t really change how the player experiences the game, and the horse race itself wasn’t doing anything particularly unique. The two words were not actually interacting.
+So, I decided to change the structure. Instead of treating both words equally, I chose one to be dominant. I made cult as the core idea and treated the horse race as an event happening inside that world.
+In the new version, the player becomes someone who is forced to prepare for a cult’s horse race ritual. The gameplay focuses on preparation tasks, such as feeding the horse, washing it, setting the saddle, all very ordinary actions. However, during these tasks, sudden and violent events can occur. The horse might unexpectedly lash out and kill you. Even overlooking a small detail could lead to death. 
+The idea was inspired by Shark Dentist, where tension comes from performing a simple action while knowing something could suddenly go wrong. I wanted to bring that structure into my game and create horror by making ordinary actions feel dangerous. Feeding a horse shouldn’t be terrifying, but in my game it is.
+At the same time, I wanted players to go through repeated, terrifying deaths. Through failure, they would slowly begin to recognize patterns and understand where the danger lies. The horror wouldn’t just come from sudden violence, but from the anxiety of knowing that something is about to go wrong.
+At the same time, I imagined another layer underneath. While trying to survive these tasks, the player would secretly collect clues and piece together what the cult is actually doing. If the player simply follows instructions and completes everything normally, they reach a bad ending. Only by understanding the logic behind the ritual and carefully sabotaging it can they escape.
+This combination made me realize that merging two themes isn’t enough. One of them must actively shape the mechanics and the player’s emotional experience.
+
+### Combination 2 – Crowd, Cooking, Survive, Loot, Cult
+In the second round, we formed a group of five, and the final set of words was Crowd, Cooking, Survive, Loot, and Cult. At first, the words felt scattered and overwhelming. 
+During the brainstorming process, different members suggested completely different directions. One person imagined a post-apocalyptic exploration game. Another wanted to make a tower defense game about stopping a cult. Someone else suggested a survival game focused on gathering resources on an island. At first, these ideas felt disconnected, but as we kept talking, I started picking up fragments from each of them. And gradually, those fragments began to merge.
+The post-apocalyptic setting stayed. The idea of stopping a cult evolved into maintaining order within a city. The survival element became resource management. Instead of focusing on a single character, I imagined the player as the leader of the last surviving city in a ruined world.
+In this version, the player manages population, food supply, and public stability. Looting can emerge if food is insufficient. Cult activity can grow if people lose faith in leadership. Cooking becomes part of food production and survival systems. The game was inspired by Frostpunk, especially in how it forces players to make difficult decisions under pressure.
+What interests me most about this idea is the tension created by imperfect resource distribution. Resources can never be allocated perfectly. If the player increases food supply to prevent looting, long-term reserves might suffer. If they deny citizens’ demands, cult influence may rise. Random events also disrupt stability, such as population growth, food shortages, or sudden crises. The player never fully knows which resource will be threatened next.
+I want the player to feel pressure from uncertainty. Early in the game, everything is scarce, and the situation feels fragile. Over time, if the player manages resources carefully, the city can stabilize. And players’ emotion shift from helplessness to a sense of control.
+This idea didn’t show up all at once. It formed gradually through listening to others and collecting pieces of their suggestions. Rather than choosing one direction immediately, I combined small elements from each idea until they began to fit together into a coherent system.
+
+### Combination 3 – Cave, Observation
+In the third round, the words were Cave and Observation. my teammate first suggested a concept inspired by a TV series where entering a cave leads to different timelines. The idea was to create a walking simulator where the player explores the cave and observes how the environment changes across time.
+At first, I liked the idea of shifting timelines, but I felt that simply walking and observing wouldn’t create enough tension or challenge. It felt too passive. The player would be watching different versions of the same space but not necessarily engaging with it in a meaningful way. However, I wanted to keep the timeline aspect. So, I restructured the idea around interaction instead of exploration alone. In this version, the player has a pair of glasses that allow them to see the cave in the past, present, and future. The core gameplay becomes comparing these timelines and understanding how they connect.
+For example, in the present timeline, the cave splits into two paths. There is a sign that indicates the correct direction, but it has been corroded and is unreadable. By switching to the past, the player can see the sign clearly and use that information to navigate in the present. In other situations, the future might reveal the consequences of choosing the wrong path.
+I was inspired by the time-shifting level in Titanfall 2. I wanted the time mechanic to function as a logic system rather than just a visual effect.
+Visually, I imagine dramatic contrasts between past, present, and future versions of the cave. Emotionally, I want the player to feel the satisfaction of solving layered puzzles and gradually uncovering the story behind the cave. The goal is not only to escape, but to piece together what happened and prevent a future tragedy.
+
+### Prototype
+For the prototype, I chose the resource management idea because I wanted to test whether balancing numbers could create tension. Since this game relies heavily on resource distribution and uncertainty, I needed to see how sensitive the system would be to small numerical changes.
+I created a simple paper prototype and there were four resources: Food, Population, Cult Influence, and Loot. Each resource started at a fixed value. Every day, the player could increase or decrease one resource by 1. Every two days, a random event card would be drawn, which would increase or decrease certain resources. The goal was to survive 8 days while keeping all four resources within a defined range.
+
+<img src="../Images/week7-image1.jpg"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+In the first test, the impact of random events was relatively small. The result was that I could pass all 8 days without feeling much pressure. The system felt stable, but it lacked tension. 
+
+<img src="../Images/week7-image2.jpg"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+In the second test, I doubled the impact of several random events. This time, the system became much more unstable. By day 6, I failed because two negative events stacked together and pushed the resources out of balance. The pressure was much stronger, but it also felt out of control.
+
+<img src="../Images/week7-image3.jpg"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+Through this process, I realized that resource balancing is much more complex than I expected. The system needs to create fluctuation to generate stress, but the fluctuations must still allow the player to feel that success is possible. If the numbers are too stable, the game feels boring. If they are too extreme, it feels unfair. The challenge lies in finding the space between stability and collapse.
+___
+
