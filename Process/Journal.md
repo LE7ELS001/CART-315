@@ -223,3 +223,51 @@ In the second test, I doubled the impact of several random events. This time, th
 Through this process, I realized that resource balancing is much more complex than I expected. The system needs to create fluctuation to generate stress, but the fluctuations must still allow the player to feel that success is possible. If the numbers are too stable, the game feels boring. If they are too extreme, it feels unfair. The challenge lies in finding the space between stability and collapse.
 ___
 
+## Journal: Game Analysis
+### Mechanics Introduction
+In Resident Evil 4 Remake (a survival horror game), there is a dynamic difficulty mechanic that adjusts the game’s difficulty based on the player’s performance. For example, if the player collects a large amount of resources such as ammo or health kits, enemies become harder to kill, forcing the player to consume their saved resources.
+In contrast, if the player has a low amount of ammunition, enemies become easier to defeat, and containers are more likely to provide additional resources.
+
+<img src="../Images/week8-gif1.gif"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+<img src="../Images/week8-gif2.gif"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+### How This Makes the Game More Interesting
+First, the dynamic difficulty system builds a feedback loop that keeps players of different skill levels within a state of flow.
+
+<img src="../Images/week8-image1.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+For highly skilled players, the loop works like this: collect resources, eliminate enemies efficiently, accumulate supplies, and repeat. However, as they accumulate more resources, the system increases enemy durability, forcing them to spend what they have saved. This prevents them from drifting into a boredom zone.
+
+At the same time, the limited backpack space acts as an additional balancing mechanism. Even if stronger enemies fail to reduce a player’s resources, inventory constraints force trade-offs. Players may sell items for money, but money can only be used to buy or upgrade weapons, not to directly restore what was sold. This ensures that resource management remains meaningful.
+
+<img src="../Images/week8-image2.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+For less skilled players, the loop is different. Because they struggle to conserve resources, they rarely approach a boredom zone. Instead, the system reduces enemy difficulty and increases drop rates, preventing them from falling too deeply into the anxiety zone. As a result, both player types are guided toward a stable flow state.
+
+In addition, this mechanic reinforces the horror experience. Because resource quantities always feel “just enough” to survive the next encounter, the situation remains uncertain. The player is never fully comfortable. This uncertainty sustains tension, which is essential in survival horror. Therefore, the dynamic difficulty system is not only a difficulty management tool, but also an experiential design tool.
+
+### Where Have They Failed
+This mechanic can fail once the player becomes aware of it.
+
+If players realize that the system is secretly helping them, they may stop conserving resources. Instead, they might intentionally use more ammo, knowing that lower resource levels will trigger higher drop rates. When this happens, the system shifts from creating tension to becoming something that can be strategically manipulated.
+
+For example, if the player holds a large amount of ammunition, breaking a container may yield 200–500 pesetas. However, if the player’s total ammunition drops below 10 bullets, there is a much higher chance of receiving 10–20 bullets instead. Since each bullet can be sold for 120 pesetas, receiving 10 bullets equals 1200 pesetas, which is more than double the maximum monetary drop.
+
+As a result, a patient player could intentionally sell ammunition before breaking containers in order to maximize profit. In this case, the dynamic difficulty system unintentionally disrupts the game’s economic balance. Once the algorithm becomes predictable, it can be exploited.
+
+### What I Could Borrow for Future Projects
+Dynamic difficulty mechanics are something I would like to use in my future projects. In linear games, this approach avoids designing a fixed and static difficulty curve, which would otherwise require long time balancing and testing.
+
+In roguelike projects, dynamic difficulty can provide additional challenges for highly skilled players while offering subtle support for less experienced players during the early stages. This can encourage both groups to continue playing without feeling either bored or overwhelmed.
+
+I am also interested in using dynamic difficulty to shape emotional experience. For example, in a roguelike game, players might believe they were lucky to receive a health potion. In reality, the system may have adjusted the drop rate based on their condition. If implemented carefully, dynamic difficulty can create a sense of fortune and unpredictability without breaking immersion.
+___
