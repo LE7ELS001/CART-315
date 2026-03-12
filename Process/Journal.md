@@ -282,24 +282,23 @@ This prototype mainly functions as a look/feel prototype, since the goal was to 
 
 I created two versions of the same space. The first version used only basic geometry without any wall textures. This version allowed me to observe the spatial structure of the corridor without visual detail. In the second version, I added simple wall materials to make the space feel more realistic. The overall layout remained the same, but the visual surfaces of the environment became more detailed.
 
-**Version 1 – Greybox Environment**
-<img src="../Images/week8-image5.png"
-     style="border:1px solid #444; padding:4px;"
-     width="500">
+<div align="center">
 
-<img src="../Images/week8-image6.png"
-     style="border:1px solid #444; padding:4px;"
-     width="500">
+<b>Version 1 – Greybox Environment</b><br><br>
 
+<img src="../Images/week8-image5.png" width="450">
+<br><br>
+<img src="../Images/week8-image6.png" width="450">
 
-**Version 2 – Textured Environment**
-<img src="../Images/week8-image3.png"
-     style="border:1px solid #444; padding:4px;"
-     width="500">
+<br><br>
 
-<img src="../Images/week8-image4.png"
-     style="border:1px solid #444; padding:4px;"
-     width="500">
+<b>Version 2 – Textured Environment</b><br><br>
+
+<img src="../Images/week8-image3.png" width="450">
+<br><br>
+<img src="../Images/week8-image4.png" width="450">
+
+</div>
 
 
 During testing, I noticed that even though the environment was very small, the repeated corridor structures made it slightly difficult to maintain a clear sense of orientation. Because many sections looked similar, it was harder to remember exactly where I had previously moved. The difference between the two versions was also noticeable. The version without textures made players more likely to get lost, but the environment felt too artificial to create much horror atmosphere. However, once the wall materials were added, the corridor started to feel more enclosed and uncomfortable. Even though the layout did not change, the added surface detail made the environment feel more believable and slightly more unsettling. 
