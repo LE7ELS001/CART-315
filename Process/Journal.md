@@ -301,6 +301,7 @@ I created two versions of the same space. The first version used only basic geom
 </div>
 
 
+
 During testing, I noticed that even though the environment was very small, the repeated corridor structures made it slightly difficult to maintain a clear sense of orientation. Because many sections looked similar, it was harder to remember exactly where I had previously moved. The difference between the two versions was also noticeable. The version without textures made players more likely to get lost, but the environment felt too artificial to create much horror atmosphere. However, once the wall materials were added, the corridor started to feel more enclosed and uncomfortable. Even though the layout did not change, the added surface detail made the environment feel more believable and slightly more unsettling. 
 
 This suggests that repetitive elements can indeed help create a sense of horror atmosphere. First, repetition creates a feeling of disorientation. Regardless of whether textures are present, the similarity between corridors makes it difficult for players to remember the paths they have already taken. Second, it can create a sense of unease, which is more related to environmental detail. When players see realistic materials, they subconsciously compare the space to real corridors, and the subtle differences from reality can make the environment feel unsettling.
@@ -309,7 +310,7 @@ For our project, this experiment suggests that the level design can remain simpl
 
 In this prototype, I used the default flashlight provided by the engine to quickly test the environment. However, during testing we realized that lighting itself can be an important part of the horror atmosphere. Because of this, the next step will be to explore different lighting setups and observe how lighting can influence the tension and mood of the space.
 
-
+___
 In a second small prototype, I explored whether simple methods could be used to create enemy movement that feels like patrol behavior. The goal was to see if convincing enemy movement could be achieved without complex AI systems.
 
 I tested two different approaches in a top-down environment. In the first method, the enemy changes its movement direction randomly after a random amount of time. This creates a strong sense of unpredictability and randomness. However, when the enemy reaches a wall, it sometimes stops moving because it cannot continue forward. This behavior feels slightly unrealistic and breaks the illusion of a patrol.
