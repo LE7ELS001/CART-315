@@ -271,3 +271,57 @@ In roguelike projects, dynamic difficulty can provide additional challenges for 
 
 I am also interested in using dynamic difficulty to shape emotional experience. For example, in a roguelike game, players might believe they were lucky to receive a health potion. In reality, the system may have adjusted the drop rate based on their condition. If implemented carefully, dynamic difficulty can create a sense of fortune and unpredictability without breaking immersion.
 ___
+
+## March 5-11 - Week 8 - Design Journal: Iterative Prototype 2
+This week I wanted to explore the concept for our horror prototype. Instead of focusing on the enemy mechanic itself, I explored how the environment could contribute to the atmosphere of the game.
+
+The design question I wanted to investigate was: Can repetitive environmental elements create tension or discomfort in a horror environment?
+The project I am currently developing with Tianshun is a horror game prototype. (https://github.com/Alibaba1555/CART315-TOTAL/blob/main/Process/Journal.md#week-6--design-journal-iterative-prototype-1) I wanted to minimize the time spent building complex levels while still maintaining a strong horror atmosphere.
+
+This prototype mainly functions as a look/feel prototype, since the goal was to explore spatial atmosphere rather than gameplay systems. I created a small digital prototype using several repeating corridors. The layout itself was intentionally very small and repetitive. Several corridor segments with similar shapes were connected to simulate a maze-like space. The goal was not to build a complex level, but to observe how repetition affects the perception of the environment.
+
+I created two versions of the same space. The first version used only basic geometry without any wall textures. This version allowed me to observe the spatial structure of the corridor without visual detail. In the second version, I added simple wall materials to make the space feel more realistic. The overall layout remained the same, but the visual surfaces of the environment became more detailed.
+
+**Version 1 – Greybox Environment**
+<img src="../Images/week8-image5.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+<img src="../Images/week8-image6.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+
+**Version 2 – Textured Environment**
+<img src="../Images/week8-image3.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+<img src="../Images/week8-image4.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+
+During testing, I noticed that even though the environment was very small, the repeated corridor structures made it slightly difficult to maintain a clear sense of orientation. Because many sections looked similar, it was harder to remember exactly where I had previously moved. The difference between the two versions was also noticeable. The version without textures made players more likely to get lost, but the environment felt too artificial to create much horror atmosphere. However, once the wall materials were added, the corridor started to feel more enclosed and uncomfortable. Even though the layout did not change, the added surface detail made the environment feel more believable and slightly more unsettling. 
+
+This suggests that repetitive elements can indeed help create a sense of horror atmosphere. First, repetition creates a feeling of disorientation. Regardless of whether textures are present, the similarity between corridors makes it difficult for players to remember the paths they have already taken. Second, it can create a sense of unease, which is more related to environmental detail. When players see realistic materials, they subconsciously compare the space to real corridors, and the subtle differences from reality can make the environment feel unsettling.
+
+For our project, this experiment suggests that the level design can remain simple and repetitive, as long as a certain level of environmental realism is maintained.
+
+In this prototype, I used the default flashlight provided by the engine to quickly test the environment. However, during testing we realized that lighting itself can be an important part of the horror atmosphere. Because of this, the next step will be to explore different lighting setups and observe how lighting can influence the tension and mood of the space.
+
+
+In a second small prototype, I explored whether simple methods could be used to create enemy movement that feels like patrol behavior. The goal was to see if convincing enemy movement could be achieved without complex AI systems.
+
+I tested two different approaches in a top-down environment. In the first method, the enemy changes its movement direction randomly after a random amount of time. This creates a strong sense of unpredictability and randomness. However, when the enemy reaches a wall, it sometimes stops moving because it cannot continue forward. This behavior feels slightly unrealistic and breaks the illusion of a patrol.
+
+<img src="../Images/week8-gif3.gif"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+The second method was inspired by the movement of the ball in the game Pong. In this version, the enemy moves in a straight line and changes direction whenever it collides with a wall. Although this behavior appears more regular and predictable, the enemy never becomes stuck against a wall. Because it keeps moving continuously, the overall effect still feels similar to a patrol behavior within the space.
+
+This experiment also suggests that creating the impression of enemy patrol behavior does not rely only on the enemy’s movement logic, but also on how the environment is designed. For example, the first method may work better if the enemy is restricted to a smaller area, where stopping after hitting a wall can feel more natural. In contrast, the second method may be more suitable for larger spaces, where the continuous bouncing movement can create the impression that the enemy is patrolling across a wider area.
+___
+
+
