@@ -324,4 +324,53 @@ The second method was inspired by the movement of the ball in the game Pong. In 
 This experiment also suggests that creating the impression of enemy patrol behavior does not rely only on the enemy’s movement logic, but also on how the environment is designed. For example, the first method may work better if the enemy is restricted to a smaller area, where stopping after hitting a wall can feel more natural. In contrast, the second method may be more suitable for larger spaces, where the continuous bouncing movement can create the impression that the enemy is patrolling across a wider area.
 ___
 
+## March 12-18 - Week 9 - Design Journal: Iterative Prototype 3
+
+### Core Design Value
+In this prototype, my core design value is exploration. I wanted to create a system that responds to player curiosity. When players notice something unusual in the environment and choose to interact with it, the system provides some form of reward. This reward could take different forms, a useful item, access to a new path, or an enemy. I focused on how simple environmental interactions can lead to discovery. For example, players can pick up jars that initially block their path. By interacting with these objects, they may uncover new routes that were not immediately visible. This turns obstacles into opportunities for exploration rather than simple barriers.
+
+### What I Was Trying to Test
+The main goal of this prototype was to test the technical feasibility of implementing an interaction system where the player can pick up and move pots.
+At the same time, I wanted to explore whether this type of interaction could support my core design value of exploration. Specifically, I was interested in whether removing obstacles through interaction could be used to reveal new paths and create moments of discovery.
+This prototype therefore focuses on both whether the system can be implemented reliably, and whether it has the potential to support a curiosity-driven interaction loop.
+
+### What I Did
+To explore this idea, I created a system that lets the player pick up pots that are blocking the path.
+At first, I thought about just moving the pots out of the way. But this quickly became a problem, because the level layout is not designed yet. If I forced the pots to move in a certain direction, they might end up inside walls or other objects.
+So instead, I changed the idea and let the player pick up the pots. This gives the player more control and makes the interaction feel more natural.
+After that, I ran into another set of problems, such as what should the animation be when the pot is picked up, how the player should put it back down, and how to set the collision of the pots. To keep things simple, I turned off the pot’s collision while it is being carried, so it doesn’t cause weird physics issues.
+For putting the pot back, I thought about different options like placing it down or throwing it. Because of time limits, I decided to only implement a throwing action. I also felt this was a better choice, since throwing could later be used for other gameplay purposes, like damaging enemies, instead of just placing the pot.
+For the pickup animation, I didn’t try to build everything from scratch since it was a bit beyond my current technical level. Instead, I looked up existing solutions and used a curved motion based on a cubic Bézier path, which worked well enough for this prototype.
+
+<img src="../Images/week9-1.gif"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+<img src="../Images/week9-2.gif"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+<img src="../Images/week9-3.gif"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+
+### Type of Prototype
+This is mainly an implementation prototype, as I focused on building and testing an interaction system. The goal was to see whether the pot interaction could be implemented in a functional way.
+
+### Fidelity
+The prototype is at a low-to-mid fidelity level. The focus is on functionality rather than visual polish. The interaction system is working, but the level design and visual presentation are still very simple and not finalized.
+
+### What I Learned
+Through this prototype, I realized that even a simple interaction system can involve many more problems than expected, such as collision handling, animation, and object behavior. These issues take time to solve, and the cost of implementation becomes an important factor in the design process.
+More importantly, this made me understand the importance of having a clear core design value from the beginning. When deciding whether to implement a feature, it is not just about whether the idea is interesting, but whether it actually supports the core design value.
+In this case, I had to constantly ask myself whether each decision helped reinforce exploration, or if it was adding unnecessary complexity. This helped me avoid adding too many features that might seem interesting but do not meaningfully contribute to the intended experience.
+Overall, this prototype made me more aware that design is not only about adding ideas, but also about making decisions and trade-offs based on what matters most.
+
+### Next Steps
+For the next step, I see two main directions to continue exploring this idea.
+The first is level design. In this prototype, picking up pots to reveal new paths only works if the environment is designed in a way that supports discovery. This means I need to experiment with how to place obstacles and hidden paths so that players are encouraged to explore.
+The second direction is camera design. The camera’s visible range affects how much the player can see, which directly influences curiosity and exploration. If too much is visible, the player may not feel the need to explore, but if too little is visible, they may miss important cues.
+Both of these directions could help strengthen how the system supports exploration.
+
 
