@@ -374,7 +374,7 @@ The second direction is camera design. The camera’s visible range affects how 
 Both of these directions could help strengthen how the system supports exploration.
 ___
 
-## March 19-25 - Week 9 - Design Journal: Iterative Prototype 4
+## March 19-25 - Week 10 - Design Journal: Iterative Prototype 4
 
 ### Goal
 So far, my prototyping process has been focused on exploring how simple mechanics and interactions can support player exploration. Earlier prototypes focused more on system-level ideas, such as randomness and dynamic difficulty. Over time, my focus shifted toward player interaction and how players engage with the environment.
