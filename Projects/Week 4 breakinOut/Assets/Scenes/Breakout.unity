@@ -151,11 +151,11 @@ MonoBehaviour:
   points: 0
   lives: 3
   HighScore: 0
-  windowSeconds: 15
-  targetDestroy: 3
+  windowSeconds: 50
+  targetDestroy: 6
   hardModeActive: 0
   moveAmplitude: 1.5
-  moveSpeed: 2
+  moveSpeed: 2.5
 --- !u!4 &21868225
 Transform:
   m_ObjectHideFlags: 0
@@ -1511,7 +1511,7 @@ MonoBehaviour:
   bs_h: 3
   bs_v: 0.9
   numBricks: 0
-  unbreakableChance: 0.3
+  unbreakableChance: 0.45
   unbreakbleColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   bottomSafeRows: 1
   maxUnbreakables: 12
