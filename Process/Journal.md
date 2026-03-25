@@ -386,7 +386,7 @@ Last week, I expanded my previous interaction system by adding a door and switch
 
 The switch is placed under a pot, which builds on the interaction system from the previous prototype. The player needs to pick up the pot to reveal the switch and progress. To leave the room, the player needs to find the correct pot among several pots that hides the switch. This requires the player to actively explore different possible interactions instead of immediately knowing the solution.
 
-<img src="../Images/week10-1.gif"
+<img src="../Images/week10-3.gif"
      style="border:1px solid #444; padding:4px;"
      width="500">
 
@@ -396,7 +396,7 @@ I also experimented with different camera setups, since the visible area affects
      style="border:1px solid #444; padding:4px;"
      width="500">
 
-<img src="../Images/week10-3.gif"
+<img src="../Images/week10-1.gif"
      style="border:1px solid #444; padding:4px;"
      width="500">
 
