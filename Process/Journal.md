@@ -372,5 +372,53 @@ For the next step, I see two main directions to continue exploring this idea.
 The first is level design. In this prototype, picking up pots to reveal new paths only works if the environment is designed in a way that supports discovery. This means I need to experiment with how to place obstacles and hidden paths so that players are encouraged to explore.
 The second direction is camera design. The camera’s visible range affects how much the player can see, which directly influences curiosity and exploration. If too much is visible, the player may not feel the need to explore, but if too little is visible, they may miss important cues.
 Both of these directions could help strengthen how the system supports exploration.
+___
 
+## March 19-25 - Week 9 - Design Journal: Iterative Prototype 4
 
+### Goal
+So far, my prototyping process has been focused on exploring how simple mechanics and interactions can support player exploration. Earlier prototypes focused more on system-level ideas, such as randomness and dynamic difficulty. Over time, my focus shifted toward player interaction and how players engage with the environment.
+
+Last week, I tried to explore how multiple mechanics can work together to guide player behavior. Specifically, I was interested in whether combining interaction (pots), hidden information (a switch), visual control (camera), and constraints (a locked door) could create a stronger sense of exploration.
+
+### What I Did
+Last week, I expanded my previous interaction system by adding a door and switch mechanic. When the player enters a room, the door closes, and the player must find a hidden switch to open it. 
+
+The switch is placed under a pot, which builds on the interaction system from the previous prototype. The player needs to pick up the pot to reveal the switch and progress. To leave the room, the player needs to find the correct pot among several pots that hides the switch. This requires the player to actively explore different possible interactions instead of immediately knowing the solution.
+
+<img src="../Images/week10-1.gif"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+I also experimented with different camera setups, since the visible area affects what the player can notice and interact with. In one version, the player can see all the pots immediately after entering the room. In another version, the player needs to move further into the space before the pots become visible. This allowed me to test how visibility influences player exploration.
+
+<img src="../Images/week10-2.gif"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+<img src="../Images/week10-3.gif"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+### Type of Prototype
+This is mainly an implementation prototype, since I focused on building and connecting different gameplay systems. It also includes elements of a role prototype, as these systems directly influence how the player behaves and explores the space.
+
+### Fidelity
+The prototype is at a low-to-mid fidelity level. The core systems and spatial structure are implemented, but the level design is still very basic and not finalized.
+
+### What I Learned
+First, I learned that camera control should serve the intended player experience. The way the camera reveals information can directly influence how players explore a space.
+
+In my previous idea, I designed a level where the layout is mostly symmetrical, with small asymmetrical elements guiding exploration. In that case, the camera should show as much of the space as possible, so players can notice these unusual points and feel encouraged to investigate them.
+
+However, in this week’s prototype, the situation is different. The player is locked inside a room and needs to figure out how to escape. I wanted to create a feeling of being trapped and exploring the unknown. Because of this, the camera should limit how much of the room is visible, so the player does not immediately understand the entire space.
+
+Second, I realized that combining different mechanics can strengthen the sense of exploration and player engagement. In theory, the switch could be placed in a visible position, and the system would still function. However, this would feel more like the player is simply following instructions set by the designer.
+By hiding the switch under a pot, the interaction becomes something the player discovers through their own actions. This creates a more active experience, where the player feels that progress comes from exploration rather than being directly guided.
+
+### Next Steps
+As a next step, I plan to explore adding a reward system to support optional exploration.
+
+In the current prototype, exploration is more forced, since the player must find the hidden switch to leave the room. However, I think exploration in a level should also include optional elements, where the player can choose whether or not to engage.
+For example, instead of only using hidden interactions as a requirement, I could introduce additional rewards such as items and stat boosts that are not necessary for progression. This would allow players to explore at their own pace and feel rewarded for their curiosity, rather than being required to explore in order to continue.
+___
