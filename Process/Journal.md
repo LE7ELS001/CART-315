@@ -422,3 +422,47 @@ As a next step, I plan to explore adding a reward system to support optional exp
 In the current prototype, exploration is more forced, since the player must find the hidden switch to leave the room. However, I think exploration in a level should also include optional elements, where the player can choose whether or not to engage.
 For example, instead of only using hidden interactions as a requirement, I could introduce additional rewards such as items and stat boosts that are not necessary for progression. This would allow players to explore at their own pace and feel rewarded for their curiosity, rather than being required to explore in order to continue.
 ___
+
+## March 26- April 1 - Week 11 - Design Journal: Iterative Prototype 5
+### What I Was Trying to Test 
+This week, I focused on exploring what motivates players to actively explore a space, and how exploration can feel less forced.
+
+In my previous prototype, exploration was required for progression, but it felt somewhat intentional and obvious. This time, I wanted to explore two main questions:
+First, what kind of rewards can make exploration feel meaningful? Second, how can exploration happen more naturally, without the player feeling like they are explicitly searching for hidden elements?
+
+### What I Did
+To address the first question, I introduced a reward system through chests. Players can obtain items such as keys and health upgrades.
+Initially, keys were used to open doors, but I realized that simply opening a door does not feel like a strong reward, as it mainly satisfies curiosity. To make exploration more valuable, I added a permanent health upgrade system. Increasing the player’s maximum health provides a lasting advantage in future encounters, making exploration more meaningful.
+
+
+<img src="../Images/week11-1.gif"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+<img src="../Images/week11-3.gif"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+This also led me to implement a UI system to display the player’s health, so that the reward becomes visible and understandable.
+
+<img src="../Images/week11-2.gif"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+
+To address the second question, I explored how to make exploration feel less intentional. Instead of asking players to search for hidden elements directly, I introduced a combat interaction: players can pick up pots and throw them at enemies. Since throwing pots is a safer, ranged way to deal damage, players are naturally encouraged to pick them up.
+As a result, the act of picking up objects is no longer just about checking for hidden content, but becomes part of combat. This allows players to accidentally discover hidden elements underneath objects, creating a sense of surprise.
+
+<img src="../Images/week11-4.gif"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+### What I Learned
+I learned that rewards play a crucial role in motivating exploration, but not all rewards are equally meaningful. Permanent upgrades create a stronger sense of value compared to simple progression mechanics.
+
+I also found that exploration becomes more engaging when it is indirect. When players interact with the environment for another purpose, such as combat, discovery can happen naturally as a byproduct rather than a deliberate action. This creates a more surprising and less forced experience.
+
+### Next Steps
+For the next step, I want to shift my focus toward level design.
+Now that I have basic systems for combat, rewards, and interaction, I want to explore how these elements can be arranged spatially to guide player behavior. In particular, I want to design levels that encourage exploration in a more natural way, using layout, object placement, and enemy positioning.
+___
