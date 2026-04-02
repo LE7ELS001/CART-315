@@ -458,9 +458,13 @@ As a result, the act of picking up objects is no longer just about checking for 
      width="500">
 
 ### What I Learned
-I learned that rewards play a crucial role in motivating exploration, but not all rewards are equally meaningful. Permanent upgrades create a stronger sense of value compared to simple progression mechanics.
+I learned that rewards play a crucial role in motivating exploration. When rewards are designed properly, players are willing to explore even when it is not required for progression.
 
-I also found that exploration becomes more engaging when it is indirect. When players interact with the environment for another purpose, such as combat, discovery can happen naturally as a byproduct rather than a deliberate action. This creates a more surprising and less forced experience.
+However, I also realized that not all rewards carry the same value. Some rewards are short-term, such as restoring health, while others are long-term, such as permanent upgrades. There are also rewards that mainly function as progression tools, like keys that lead to new areas or further rewards.
+
+Because of this, it is important to balance effort and reward. The challenge or effort required from the player should feel proportional to the value of the reward. For example, if a player overcomes multiple obstacles or risks, the reward should feel meaningful, such as a permanent upgrade, rather than a simple temporary benefit. Permanent rewards tend to create a stronger sense of value and impact on future gameplay.
+
+I also found that exploration becomes more engaging when it is indirect. When players interact with the environment for another purpose, such as combat, discovery can happen naturally as a byproduct rather than a deliberate action. This creates a more surprising and organic experience.
 
 ### Next Steps
 For the next step, I want to shift my focus toward level design.
