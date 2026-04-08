@@ -566,14 +566,19 @@ Finally, I focus on reward systems and UI. This includes adding meaningful rewar
 
 ### What Is Working
 Several core systems are working as intended. Basic interactions, such as triggering switches to open doors and receiving rewards like health upgrades, function reliably and produce the expected results. This ensures that the main gameplay loop is functional.
+
 The level design and overall structure of the prototype are also working at a basic level. The game now provides a simple but complete flow, with a clear start and end, allowing players to go through a full experience rather than isolated mechanics.
+
 In addition, the core game logic is stable. The player interacts correctly with the environment, such as not passing through walls, and enemies appear and behave as expected. These elements help make the prototype feel more complete and playable.
 
 ### Concerns / Questions
 One of my main concerns is whether the prototype really communicates exploration as the core experience. During playtesting, I noticed that player would interpret the game in very different ways.
 For example, when my roommate tested the game, he treated it mainly as a combat-focused experience. Since he plays a lot of games, he focused on defeating enemies as efficiently as possible and didn’t pay much attention to exploration or rewards. 
+
 This also raises some issues with balancing and feedback. In terms of difficulty, the game might feel too easy for experienced players, but at the same time it could still be challenging for more casual players. I already noticed this problem in week 6 prototypes, but it is still not fully resolved.
+
 Another issue is feedback. Right now, when a chest appears, it happens instantly without any visual or audio effects. Because of that, players might feel like they just missed something, instead of understanding that it appeared as a reward for their actions.
+
 Finally, there are still some technical issues. For example, in rare cases, enemy behavior can make the level impossible to complete. 
 
 ___
