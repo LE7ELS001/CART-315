@@ -470,3 +470,111 @@ I also found that exploration becomes more engaging when it is indirect. When pl
 For the next step, I want to shift my focus toward level design.
 Now that I have basic systems for combat, rewards, and interaction, I want to explore how these elements can be arranged spatially to guide player behavior. In particular, I want to design levels that encourage exploration in a more natural way, using layout, object placement, and enemy positioning.
 ___
+
+## April 2 - April 8 - Week 12 - Design Journal: Final Iterative Prototype
+
+### Final prototype introduction
+My final prototype is a small top-down Zelda-like game. The core design value is to create an exploration experience through interactive mechanics, where the system responds to player curiosity and encourages discovery.
+
+In this prototype, the player moves through a room-based environment where objects, enemies, and rewards are placed to guide exploration. The player can interact with pots, pick them up, and throw them at enemies. Some objects hide important elements such as switches, which can unlock doors and allow progression. Others offer optional but meaningful rewards, such as permanent damage upgrades.
+Some objects hide important elements such as switches, which can unlock doors and allow progression. Others offer optional but meaningful rewards through chests, such as keys or permanent health upgrades. These rewards give players a reason to explore beyond what is strictly required. A simple UI is used to display the player’s health, making the impact of these rewards more visible.
+Overall, this prototype focuses on how interaction, rewards, and level layout can work together to create a sense of discovery, where players explore not only to progress, but also out of curiosity.
+
+<img src="../Images/week12-1.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+<img src="../Images/week12-2.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+<img src="../Images/week12-3.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+### Progression and Integration
+#### Stage 1 – Exploration and Discovery
+In the first stage, I experimented with adding new elements to simple games. For example, I added randomized controls to Pong, procedural level generation and dynamic difficulty adjustments to Breakout.
+All of these experiments were trying to answer a similar question:
+Can adding certain elements make a simple mechanics more interesting?
+The answer was yes. Both randomness and dynamic systems made familiar games feel more engaging.
+This influenced the direction of my final prototype. Instead of adding more and more different mechanics, I started thinking about focusing on one or two core mechanics and developing them further. For example, the pot interaction became something I could connect to puzzle solving, combat, and exploration.
+At the same time, in the dynamic difficulty prototype, I noticed something important: when the system reacts to the player’s actions in unexpected ways, it creates a strong sense of engagement. This idea later became the starting point for my final design value of exploration, where the system responds to the player’s curiosity and actions.
+
+#### Stage 2 – Trial and Direction Finding
+In this stage, I explored many different ideas and implemented several mechanics. However, at that point, I was not sure how these ideas connected or what they were really contributing to the experience.
+This changed after learning about core design values in class. In Week 9, my prototype implemented the pot interaction system and started thinking about whether this mechanic actually supported exploration.
+Once I confirmed that it did, I began to focus more on developing this idea instead of adding unrelated features. From that point on, I evaluated new mechanics based on whether they helped create a stronger sense of exploration.
+This stage helped me move from trying many different ideas to focusing on a smaller set of mechanics that work together.
+
+#### Stage 3 – Iteration
+After defining exploration as the main direction, I continued to develop and test different aspects of it through new prototypes.
+For example, in Week 10, I explored camera distance and how it affects what the player can see and discover. In Week 11, I focused on reward systems and how different types of rewards can motivate players to explore.
+These experiments helped me understand two key things:
+how much information the player should be given to create a sense of discovery, and what kind of rewards can encourage players to explore.
+Both of these directly contributed to the design of my final prototype.
+
+#### Stage 4 – Application and Integration
+In this stage (last week), I started applying what I learned from all previous prototypes into actual level design.
+In the past, when I designed levels, I would often start building directly in the engine without a clear plan. This usually led to a lot of trial and error, taking a long time with limited results.
+This time, I approached level design differently. First, I wrote down the goal of the level, similar to how each prototype was guided by a specific question. This reflects how I made prototypes like the procedural generation and dynamic difficulty experiments, where each one focused on testing a clear idea.
+
+Then I planned the sequence of player experience, which relates to the “role” aspect of prototyping. This was influenced by earlier stage 1 prototype testing where I thought about how mechanics affect player experience, such as how the randomness creates tension to the players.
+
+<img src="../Images/week12-4.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+<img src="../Images/week12-5.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+<img src="../Images/week12-6.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+After that, I sketched the layout of the level on paper, including object placement and enemy positions. This connects to the “look/feel” stage, similar to when I explored how repetition and layout affect player perception in week 8 prototype.
+
+<img src="../Images/week12-7.jpeg"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+<img src="../Images/week12-8.jpeg"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+Finally, I implemented the level in the engine and tested whether everything worked as intended. This reflects the implementation-focused prototypes I developed in stage 3, where I tested whether mechanics were technically feasible and playable.
+
+<img src="../Images/week12-7.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+<img src="../Images/week12-8.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+By following this process, I was able to combine the methods from earlier prototypes into a more structured and efficient workflow for building my final prototype.
+
+### Type of Prototype
+This final prototype leans mostly on implementation. I am mainly focusing on building and integrating systems such as pot interaction, combat, rewards, and level design to create a cohesive gameplay experience.
+At the same time, it also includes elements of a role prototype, since these systems are designed to shape how players explore the environment and respond to different situations.
+
+### Where I Am Focusing My Efforts
+My main focus is on level design. I am working on how the layout of the space, object placement, and enemy positioning can guide player exploration and create opportunities for discovery.
+After that, I focus on implementing core gameplay mechanics, such as lifting up and throwing pots, triggering switches, and revealing chests. These interactions are important because they define how players engage with the environment.
+Finally, I focus on reward systems and UI. This includes adding meaningful rewards such as keys and damage upgrades, as well as making these rewards visible to the player through the UI. While these elements are important, they come after the level structure and interaction systems are in place.
+
+### What Is Working
+Several core systems are working as intended. Basic interactions, such as triggering switches to open doors and receiving rewards like health upgrades, function reliably and produce the expected results. This ensures that the main gameplay loop is functional.
+The level design and overall structure of the prototype are also working at a basic level. The game now provides a simple but complete flow, with a clear start and end, allowing players to go through a full experience rather than isolated mechanics.
+In addition, the core game logic is stable. The player interacts correctly with the environment, such as not passing through walls, and enemies appear and behave as expected. These elements help make the prototype feel more complete and playable.
+
+### Concerns / Questions
+One of my main concerns is whether the prototype really communicates exploration as the core experience. During playtesting, I noticed that player would interpret the game in very different ways.
+For example, when my roommate tested the game, he treated it mainly as a combat-focused experience. Since he plays a lot of games, he focused on defeating enemies as efficiently as possible and didn’t pay much attention to exploration or rewards. 
+This also raises some issues with balancing and feedback. In terms of difficulty, the game might feel too easy for experienced players, but at the same time it could still be challenging for more casual players. I already noticed this problem in week 6 prototypes, but it is still not fully resolved.
+Another issue is feedback. Right now, when a chest appears, it happens instantly without any visual or audio effects. Because of that, players might feel like they just missed something, instead of understanding that it appeared as a reward for their actions.
+Finally, there are still some technical issues. For example, in rare cases, enemy behavior can make the level impossible to complete. 
+
+___
+
