@@ -473,6 +473,62 @@ ___
 
 ## April 2 - April 8 - Week 12 - Design Journal: Final Iterative Prototype
 
+### Idea 
+This week I focused on using level design to support exploration. Instead of relying only on mechanics, I wanted to explore how spatial layout, object placement, and enemy positioning can guide player behavior and create opportunities for discovery.
+
+### Goal
+I wanted to answer two main questions:
+First, how can level layout encourage players to explore naturally, rather than forcing exploration?
+
+Second, how can objects, enemies, and rewards be arranged to create indirect discovery, where players interact with the environment for one purpose but discover something else as a result?
+
+### What I Made
+For this stage, I built a playable version of the level in the engine.
+The level includes the main layout, basic spatial structure, and key elements that guide the player’s movement. The focus here was not on visual polish, but on testing how the space works when the player actually moves through it.
+
+<img src="../Images/week12-9.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+<img src="../Images/week12-10.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+### Type of Prototype & Fidelity
+For this stage, I didn’t focus on just one type of prototype. Instead, I explored a combination of role, look/feel, and implementation prototypes to better understand how the level works as a whole.
+First, I wrote down a rough version of the player experience in Word. This helped me think about how the player might move through the space, what they notice, and how tension or pacing could build over time. This part mainly functions as a role prototype, since it focuses on the player’s perspective and experience. 
+
+<img src="../Images/week12-5.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+Then, I created a paper layout of the map. I used this to explore spatial structure, object placement, and general flow between areas. This stage is closer to a look/feel prototype, since it helps visualize how the space might be read and navigated.
+
+<img src="../Images/week12-7.jpeg"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+Finally, I implemented the level directly in the engine. This allowed me to test movement, scale, and how the player actually interacts with the environment. This is the implementation prototype, where I could verify whether my earlier ideas actually work in practice.
+
+<img src="../Images/week12-8.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+
+In terms of fidelity, the process moved from low fidelity to higher fidelity. The Word document and paper sketches were low-fidelity explorations focused on ideas, while the in-engine version is a more refined prototype that allows for actual interaction and testing.
+
+### What I Learned
+I learned that level design plays a crucial role in shaping exploration. The placement of objects, enemies, and rewards can strongly influence how players move and what they choose to interact with.
+I also found that indirect exploration can be supported by layout. For example, placing objects near enemies encourages players to interact with them for combat, which can lead to unexpected discoveries.
+In addition, I realized that level structure needs to work together with rewards and mechanics. Exploration does not come from a single element, but from how all these systems are combined in space.
+
+### Next Step
+The next step is to conduct user testing.
+So far, the design is mainly based on my own assumptions about how players might experience the level. While the current prototype allows me to test structure and flow, it still lacks real player feedback.
+Through user testing, I want to observe how players actually navigate the space, whether they understand the intended layout, and if the pacing and guidance work as expected. Based on these observations, I can further refine the level design.
+
+
+
+
 ### Final prototype introduction
 My final prototype is a small top-down Zelda-like game. The core design value is to create an exploration experience through interactive mechanics, where the system responds to player curiosity and encourages discovery.
 
