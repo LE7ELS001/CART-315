@@ -638,4 +638,49 @@ Another issue is feedback. Right now, when a chest appears, it happens instantly
 Finally, there are still some technical issues. For example, in rare cases, enemy behavior can make the level impossible to complete. 
 
 ___
+## Design Journal: Final Reflection
 
+### Playtest
+Last week in class, we did playtesting for each other’s final prototypes. The goal  was to see how the final prototype actually feels to play, and whether it successfully delivers the core design value I intended.
+
+### What Works
+First, most players acknowledged the overall level of completion of the prototype. They felt that the combat and interaction systems were fairly complete.
+
+During gameplay, the combination of different map areas, lifting pots, fighting regular enemies, revealing and opening chests, and the final boss fight created a relatively complete experience.
+
+Overall, players did not find the game repetitive or boring, and each part of the experience offered something new.
+
+### What Doesn’t Work
+The main issue is that the exploration design value was not fully reflected in the playtest.
+
+More than half of the players did not actively search for hidden content as I expected, such as the first hidden chest. Some players did not even realize that hidden chests existed as a mechanic in the game.
+
+In addition, most players chose to return directly after getting the boss key instead of continuing to explore the remaining areas. Some players also did not notice the hidden paths.
+
+There are also some bugs that affect the experience. For example, after the player dies and chooses “continue,” the health display is incorrect. Also, after dying in the boss fight, the respawn point is too far away, requiring the player to go through three rooms again before retrying.
+
+### Reflection of Playtest 
+Through this playtest, I realized more clearly how important user testing is.
+No matter how much planning and assumption goes into the design process, it still cannot fully predict how players will actually behave or think during gameplay. Many things that I assumed players would naturally do did not happen in reality.
+Compared to my expectations, players’ decisions, attention, and understanding of mechanics were quite different.
+If I were to continue developing this project, I would leave more time for user testing and iterate based on real feedback, instead of relying mainly on my initial design assumptions.
+
+## Overall Reflection
+Through this course, my understanding of game prototyping has changed.
+
+At the beginning, I mainly saw a prototype as an early version of a game that needed to be playable. However, over time, I realized that a prototype is more about testing a specific idea or question, rather than building a complete game experience.
+
+Secondly, my understanding of design value has also changed. In the past, when designing games, I did not really think about design value. During development, I would keep adding mechanics that I personally found interesting. As a result, the development process became very long, and the overall structure of the game felt loose, almost like a “Frankenstein” made of different mechanics.
+
+<img src="../Images/final1.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+This course made me realize that all design decisions should be guided by a clear design value. Whether it is choosing ideas or deciding how to implement them, everything should be evaluated based on whether it supports that core design value.
+
+
+Finally, the prototyping model of Houde & Hill was very helpful to me. Game development involves many different aspects, such as art, level design, mechanics, and UI, and different types of games can require very different approaches. Because of this, I often struggled to figure out what a “correct” workflow should be.
+
+<img src="../Images/final2.png"
+     style="border:1px solid #444; padding:4px;"
+     width="500">
+The Houde & Hill model does not provide a fixed workflow, but instead offers a way of thinking about prototyping. It helps break down what exactly you are trying to explore, such as role, look and feel, or implementation. This way of thinking is especially helpful for my interest in level design, as it gives me a clearer direction when deciding what to focus on in each prototype.
