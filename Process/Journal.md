@@ -665,7 +665,7 @@ No matter how much planning and assumption goes into the design process, it stil
 Compared to my expectations, players’ decisions, attention, and understanding of mechanics were quite different.
 If I were to continue developing this project, I would leave more time for user testing and iterate based on real feedback, instead of relying mainly on my initial design assumptions.
 
-## Overall Reflection
+### Overall Reflection
 Through this course, my understanding of game prototyping has changed.
 
 At the beginning, I mainly saw a prototype as an early version of a game that needed to be playable. However, over time, I realized that a prototype is more about testing a specific idea or question, rather than building a complete game experience.
