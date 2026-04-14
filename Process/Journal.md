@@ -675,6 +675,7 @@ Secondly, my understanding of design value has also changed. In the past, when d
 <img src="../Images/final1.png"
      style="border:1px solid #444; padding:4px;"
      width="500">
+
 This course made me realize that all design decisions should be guided by a clear design value. Whether it is choosing ideas or deciding how to implement them, everything should be evaluated based on whether it supports that core design value.
 
 
@@ -683,4 +684,5 @@ Finally, the prototyping model of Houde & Hill was very helpful to me. Game deve
 <img src="../Images/final2.png"
      style="border:1px solid #444; padding:4px;"
      width="500">
+
 The Houde & Hill model does not provide a fixed workflow, but instead offers a way of thinking about prototyping. It helps break down what exactly you are trying to explore, such as role, look and feel, or implementation. This way of thinking is especially helpful for my interest in level design, as it gives me a clearer direction when deciding what to focus on in each prototype.
